@@ -15,8 +15,8 @@ namespace restart_VM
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{vmnum}",
+                defaults: new { controller = "Home", action = "Index", vmnum = UrlParameter.Optional }
             );
         }
     }
