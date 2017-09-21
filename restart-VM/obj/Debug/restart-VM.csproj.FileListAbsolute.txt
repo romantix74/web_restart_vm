@@ -80,3 +80,4 @@ c:\users\roman\documents\visual studio 2015\Projects\restart-VM\restart-VM\bin\M
 c:\users\roman\documents\visual studio 2015\Projects\restart-VM\restart-VM\obj\Debug\restart-VM.csprojResolveAssemblyReference.cache
 c:\users\roman\documents\visual studio 2015\Projects\restart-VM\restart-VM\obj\Debug\restart-VM.dll
 c:\users\roman\documents\visual studio 2015\Projects\restart-VM\restart-VM\obj\Debug\restart-VM.pdb
+c:\users\roman\documents\visual studio 2015\Projects\restart-VM\restart-VM\bin\System.Management.Automation.dll
