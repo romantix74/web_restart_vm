@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Страница для перезагрузки ВМ";
+}
+
+
+<div class="row">
+    <h3>@ViewBag.message</h3>
+    <form method="post">
+        <input name="__RequestVerificationToken" type="hidden" value="UxY6bkQyJCXO3Kn5AXg-6TXxOj6yVBi9tghHaQ5Lq_qwKvcojNXEEfcbn-FGh_0vuw4tS_BRk7QQQHlJp8AP4_X4orVNoQnp2cd8kXhykS01" />  <fieldset class="form-horizontal">
+            <legend>Введите номер ВМ , например для pc-01 , введите 01</legend>
+
+                                  
+            <div class="control-group">
+                <label class="control-label" for="VMnum">VM number</label>
+                <div class="controls">
+                    <input class="text-box single-line" data-val="true" data-val-number="The field VMnum must be a number." data-val-required="The Number of PC field is required." id="Price" name="vmnum" type="text" value="01" />
+                    <span class="field-validation-valid help-inline" data-valmsg-for="Price" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Restart" class="btn" />
+            </div>
+        </fieldset>
+    </form>
+    
+</div>

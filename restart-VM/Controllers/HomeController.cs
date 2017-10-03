@@ -34,8 +34,8 @@ namespace restart_VM.Controllers
                 {
                     // use "AddScript" to add the contents of a script file to the end of the execution pipeline.
                     // use "AddCommand" to add individual commands/cmdlets to the end of the execution pipeline.
-                    PowerShellInstance.AddScript("connect-viserver 192.168.46.10;  " +
-                            "get-vm pc-TEST | Restart-VM -confirm:$false; ");
+                    PowerShellInstance.AddScript(string.Format("connect-viserver 192.168.46.10;  " +
+                            "get-vm pc_{0} | Restart-VM -confirm:$false; ", _vmnum) );
 
                     // use "AddParameter" to add a single parameter to the last command/script on the pipeline.
                     //PowerShellInstance.AddParameter("param1", "parameter 1 value!");
@@ -56,7 +56,7 @@ namespace restart_VM.Controllers
                         }
                     }
                 }
-
+                _message = "Перезагрузка ВМ pc-" + Request.Form["vmnum"] + " прошла успешно";
             }
             catch (FormatException e)
             {
@@ -66,7 +66,7 @@ namespace restart_VM.Controllers
                 return View();
             }
 
-            _message = "Перезагрузка ВМ pc-" + Request.Form["vmnum"] + " прошла успешно";
+            
 
             ViewBag.message = _message;
             return View();
